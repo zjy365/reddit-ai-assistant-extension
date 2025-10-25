@@ -8,9 +8,26 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Shaders Landing Page",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Reddit AI Assistant - AI-Powered Chrome Extension",
+  description: "Generate intelligent Reddit replies and posts using OpenAI. Choose from multiple templates, customize your tone, and engage with the community effortlessly.",
+  keywords: ["Reddit", "AI", "Chrome Extension", "OpenAI", "Reply Generator", "Post Creator", "Artificial Intelligence"],
+  authors: [{ name: "zjy365" }],
+  creator: "zjy365",
+  openGraph: {
+    title: "Reddit AI Assistant - AI-Powered Chrome Extension",
+    description: "Generate intelligent Reddit replies and posts using OpenAI. Choose from multiple templates, customize your tone, and engage with the community effortlessly.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reddit AI Assistant - AI-Powered Chrome Extension",
+    description: "Generate intelligent Reddit replies and posts using OpenAI. Choose from multiple templates, customize your tone, and engage with the community effortlessly.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
