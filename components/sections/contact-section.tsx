@@ -47,8 +47,11 @@ export function ContactSection() {
                 </p>
               </a>
 
-              <div
-                className={`transition-all duration-700 ${
+              <a
+                href="https://chromewebstore.google.com/detail/reddit-ai-assistant/pnlnmologgcbjdgioacnchgmimempkan"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group block transition-all duration-700 ${
                   isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
                 }`}
                 style={{ transitionDelay: "350ms" }}
@@ -57,9 +60,11 @@ export function ContactSection() {
                   <Chrome className="h-3 w-3 text-foreground/60" />
                   <span className="font-mono text-xs text-foreground/60">Chrome Web Store</span>
                 </div>
-                <p className="text-base text-foreground md:text-2xl">Coming Soon</p>
-                <p className="mt-1 text-xs text-foreground/60 md:text-sm">Pending review</p>
-              </div>
+                <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
+                  Available Now
+                </p>
+                <p className="mt-1 text-xs text-foreground/60 md:text-sm">Version 0.5.0</p>
+              </a>
 
               <div
                 className={`flex gap-2 pt-2 transition-all duration-700 md:pt-4 ${
@@ -107,9 +112,9 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">01</span>
                   <div className="h-px flex-1 bg-foreground/20" />
                 </div>
-                <h3 className="mb-1 font-sans text-xl font-light text-foreground md:text-2xl">Clone Repository</h3>
+                <h3 className="mb-1 font-sans text-xl font-light text-foreground md:text-2xl">Install Extension</h3>
                 <p className="text-sm leading-relaxed text-foreground/80">
-                  Clone from GitHub and install dependencies with pnpm
+                  Install from Chrome Web Store with one click
                 </p>
               </div>
 
@@ -123,8 +128,10 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">02</span>
                   <div className="h-px flex-1 bg-foreground/20" />
                 </div>
-                <h3 className="mb-1 font-sans text-xl font-light text-foreground md:text-2xl">Build Extension</h3>
-                <p className="text-sm leading-relaxed text-foreground/80">Run pnpm build to create the dist folder</p>
+                <h3 className="mb-1 font-sans text-xl font-light text-foreground md:text-2xl">Configure Settings</h3>
+                <p className="text-sm leading-relaxed text-foreground/80">
+                  Enter your OpenAI API key and customize preferences
+                </p>
               </div>
 
               <div
@@ -137,9 +144,9 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">03</span>
                   <div className="h-px flex-1 bg-foreground/20" />
                 </div>
-                <h3 className="mb-1 font-sans text-xl font-light text-foreground md:text-2xl">Load in Chrome</h3>
+                <h3 className="mb-1 font-sans text-xl font-light text-foreground md:text-2xl">Start Using</h3>
                 <p className="text-sm leading-relaxed text-foreground/80">
-                  Enable Developer mode and load the unpacked extension
+                  Open the sidebar on any Reddit page and generate AI-powered replies
                 </p>
               </div>
 
@@ -153,10 +160,10 @@ export function ContactSection() {
                   variant="primary"
                   size="lg"
                   className="w-full"
-                  onClick={() => window.open("https://github.com/zjy365/reddit-ai-assistant#installation", "_blank")}
+                  onClick={() => window.open("https://chromewebstore.google.com/detail/reddit-ai-assistant/pnlnmologgcbjdgioacnchgmimempkan", "_blank")}
                 >
-                  <BookOpen className="mr-2 h-4 w-4" />
-                  View Full Guide
+                  <Chrome className="mr-2 h-4 w-4" />
+                  Install from Chrome Web Store
                 </MagneticButton>
               </div>
             </div>

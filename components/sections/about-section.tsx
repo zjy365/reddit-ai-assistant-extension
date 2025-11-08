@@ -85,7 +85,11 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           }`}
           style={{ transitionDelay: "750ms" }}
         >
-          <MagneticButton size="lg" variant="primary" onClick={() => scrollToSection?.(4)}>
+          <MagneticButton
+            size="lg"
+            variant="primary"
+            onClick={() => window.open("https://chromewebstore.google.com/detail/reddit-ai-assistant/pnlnmologgcbjdgioacnchgmimempkan", "_blank")}
+          >
             Install Extension
           </MagneticButton>
           <MagneticButton

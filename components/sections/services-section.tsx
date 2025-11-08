@@ -25,26 +25,26 @@ export function ServicesSection() {
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Multiple AI Options",
+              title: "Smart Reply Generation",
               description:
-                "Get 3 different AI-generated suggestions for every reply with copy, edit, or insert actions",
+                "AI analyzes Reddit context to create relevant, engaging replies with multiple options to choose from",
               direction: "top",
             },
             {
-              title: "Template Customization",
-              description: "Choose from 5 built-in templates or create your own for any tone or style",
+              title: "Post Creation Assistant",
+              description: "Build compelling posts through conversational AI interaction with custom templates",
               direction: "right",
             },
             {
               title: "Privacy-First Design",
               description:
-                "All settings stored locally with your own OpenAI API key - no tracking or external data collection",
+                "Uses your own OpenAI API key, no data collection. All data stays in your browser with full user control",
               direction: "left",
             },
             {
               title: "Seamless Integration",
               description:
-                "Works directly on Reddit with sidebar access via extension icon, floating button, or keyboard shortcut",
+                "Works directly within Reddit pages via sidebar and floating buttons for instant access",
               direction: "bottom",
             },
           ].map((service, i) => (

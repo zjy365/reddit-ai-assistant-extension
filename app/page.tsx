@@ -246,7 +246,10 @@ export default function Home() {
           ))}
         </div>
 
-        <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
+        <MagneticButton
+          variant="secondary"
+          onClick={() => window.open("https://chromewebstore.google.com/detail/reddit-ai-assistant/pnlnmologgcbjdgioacnchgmimempkan", "_blank")}
+        >
           Install Now
         </MagneticButton>
       </nav>
@@ -273,17 +276,16 @@ export default function Home() {
             </h1>
             <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-foreground/90 duration-1000 delay-200 md:text-xl">
               <span className="text-pretty">
-                Generate context-aware Reddit replies and posts using OpenAI. Choose from multiple templates, customize
-                your tone, and engage with the community effortlessly.
+                AI-powered assistant for Reddit replies and posts. Generate smart replies, create engaging posts, and boost your Reddit presence with AI-powered assistance. Privacy-first design using your own OpenAI API key.
               </span>
             </p>
             <div className="flex animate-in fade-in slide-in-from-bottom-4 flex-col gap-4 duration-1000 delay-300 sm:flex-row sm:items-center">
               <MagneticButton
                 size="lg"
                 variant="primary"
-                onClick={() => window.open("https://github.com/zjy365/reddit-ai-assistant", "_blank")}
+                onClick={() => window.open("https://chromewebstore.google.com/detail/reddit-ai-assistant/pnlnmologgcbjdgioacnchgmimempkan", "_blank")}
               >
-                View on GitHub
+                Install from Chrome Web Store
               </MagneticButton>
               <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection(1)}>
                 Explore Features
